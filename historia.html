@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imagenes/logo.svg">
+    <link rel="stylesheet" href="./style-pag-his.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto-Final</title>
+</head>
+<body>
+    <header>
+        <div class="cont-nav">
+            <a href="./index.html">
+                <svg  width="150" height="80">
+                    <rect width="60" height="35" x="45" y="5" rx="5" id="monitor" fill="#3F6797"></rect>
+                    <rect width="50" height="25" x="50" y="10" rx="5" id="monitor2" fill="#B1D5E4"></rect>
+                    <polygon points="30 62 ,55 45 ,95 45,115 62" fill="#3F6797" id="teclado"></polygon>
+                    <polygon points="43 58 ,57 48 ,92 48,104 58" fill="#B1D5E4" id="teclado2"></polygon>
+                </svg>
+            </a>
+            <nav class="menu-nav">
+                
+                <ul class="ul">
+                    <li class="li"><a href="./index.html" class="a-menu-nav">INICIO</a></li> 
+                    <li class="li"><a href="./juguemos.html" class="a-menu-nav">JUGUEMOS</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+            
+        <div class="container-img">
+            <h1 class="titulo-principal">HISTORIA DE LA PROGRAMACION</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="cont-parrafos"> 
+                <div><h2>El principio de la historia de la programación</h2></div>
+                <div class="text-his cont-text-his"><p>El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p></div>
+            </div>
+            <div class="cont-parrafos " id="cont-parrafos-2" > 
+                <div class="text-his cont-text-his"><p>Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.<br>
+                Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.</p></div>
+                <div><h2>Lenguaje de ensamblaje</h2></div>
+            </div>
+            <div class="cont-parrafos"> 
+                <div class="text-his"><h2>Los primeros lenguajes de programación</h2></div>
+                <div class="cont-text-his">
+                    <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.</p>
+                    <p>En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas automatizados y señales de tráfico.<br>
+                    El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense</p>
+                    <p>En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.</p>
+                    <p>Entre 1969 y 1973 se crea <b>C</b>, a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».</p>
+                    <p>En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader
+                    Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia</p>
+                </div>
+            </div>
+        </section>
+        <article>
+            <h2>Un breve video para complementar lo visto</h2>
+            <div id="cont-video" >
+                <video id="video-his" poster="./assets/imagenes/play-circle-line-illustration-on-white-background-creative-icon-vector.jpg">
+                    <source src="./assets/video/historia-Comp.mp4">
+                    <source src="./assets/video/historia-Comp.ogv">
+                </video>
+                <div class="barra-video" >                    
+                        <button id="btn-play"><img class="img-button" src="./assets/imagenes/play_arrow.svg" alt="boton play"></button><button id="btn-stop"><img class="img-button" src="./assets/imagenes/stop_FILL1.svg" alt="boton pausa"></button>
+                        <input type="range" id="barra-progreso-video" min="0" max="100" step="0.1" value="0">
+                        <small id="duracion-video"> 00:00 </small>                 
+                </div>
+            </div>
+            
+            
+            
+        </article>
+    </main>  
+    <footer>
+        <div id="cont-footer-izquierdo"><img class="img-footer" src="./assets/imagenes/logo.svg" alt=""><h3>PROGRAMACION<br>E<br>HISTORIA</h3></div>
+        <div>Sitio con fines educativos - Creado por M.Victoria Lopez</div>
+    </footer>
+    <script src="./controlesDeVideo.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

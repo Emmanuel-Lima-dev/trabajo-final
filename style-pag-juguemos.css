@@ -1,0 +1,74 @@
+main{
+    height: auto;
+}
+
+h2{
+    margin:133px 0px 0px 0px;
+}
+
+.cont-zone-rompe{
+    display: flex;
+    margin: -67px auto 107px;
+    justify-content: center;
+}
+
+.zone-rompe{
+    min-width:275px;
+    height: 400px;
+    border: #000 solid 2px;
+    text-align: center;
+    color: #000;
+    background-color: gray;
+}
+
+#cont-img-rompe{
+    display: flex;
+    margin-top: -66px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#img1, 
+#img2, 
+#img3{
+    width: 275px;
+    height: 400px;
+    cursor:grab;
+}
+
+#img1:active, 
+#img2:active, 
+#img3:active{
+    cursor: grabbing;
+}
+
+#btn-reiniciar{
+    display: flex;
+    margin: 40px auto;
+    padding: 10px 100px;
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    background-color: #F0F5E4;
+    color: #154454;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+}
+
+#btn-reiniciar:active{
+    right: -1.5px;
+    bottom: -1.5px;
+    box-shadow: none;
+}
+
+.bienHecho{
+    text-align: center;
+    background-color: #000;
+    color: rgb(9, 118, 22);
+}
+
+.mal-hecho{
+    text-align: center;
+    background-color: #000;
+    color: rgb(118, 9, 9);
+}
