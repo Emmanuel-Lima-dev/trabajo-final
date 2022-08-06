@@ -110,6 +110,79 @@ a{
     background-color: #d5daca;
 }
 
+#cont-amburguesa{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    right: 40px;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.span-menu{
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin:10px auto ;
+    z-index: 100;
+    transition: 0.5s ease-in;
+}
+
+.span1efecto{
+    animation: span1 ease-in .3s forwards;
+    animation-iteration-count: 1;
+}
+
+.span1efecto2{
+    animation: span1 ease-in .3s forwards;
+    animation-iteration-count: 1;
+    animation-duration: reverse;
+}
+
+@keyframes span1{
+    0%{
+    }
+    100%{
+        transform:translateY(15px) rotate(45deg);  
+    }
+}
+
+.span2efecto{
+    animation: span2 ease-in .3s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes span2{
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;        
+    }
+    100%{
+        transform:translateX(45px);  
+        opacity: 0;     
+    }
+}
+
+.span3efecto{
+    animation: span3 ease-in .3s forwards;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes span3{
+    0%{
+    }
+    100%{
+        transform:translateY(-10px) rotate(-45deg);  
+    }
+}
+
 .btn-card:active, .a-menu-nav:active{
     box-shadow: 0px 0px 0px;
     position: relative;
@@ -232,6 +305,7 @@ h3{
         width: 100%;
         font-size: 10px;
         margin: 0;
+        text-align: center;
     } 
     .li{
       width: 80px;  
@@ -245,7 +319,8 @@ h3{
         padding: 0;
         height: 100vh;
         width: 100vw;
-        background-color: red;
+        background-color: #000;
+        border-radius: 0 0 30% 0;
         position: fixed;
         left: 0;
         top: -100vh;
@@ -254,9 +329,18 @@ h3{
         margin: 0;
         gap: 50px;
         justify-content: center;
+        transition: .5s ease-in;
     }
     
-    
+    .aparece-menu{
+    top: 0px;
+    transition: .5s ease-in;
+    }
+
+    #cont-amburguesa{
+        display: block;
+        z-index: 100;
+    }
 
     .titulo-principal{
         font-size: 36px;
