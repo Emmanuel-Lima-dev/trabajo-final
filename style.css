@@ -110,7 +110,7 @@ a{
     background-color: #d5daca;
 }
 
-#cont-amburguesa{
+#cont-hamburguesa{
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -141,6 +141,7 @@ a{
 .span1efecto{
     animation: span1 ease-in .3s forwards;
     animation-iteration-count: 1;
+    background-color: red;
 }
 
 @keyframes span1{
@@ -178,7 +179,7 @@ a{
     }
     100%{
         transform:translateX(45px);  
-        opacity: 0;     
+        opacity: 0;  
     }
 }
 
@@ -203,6 +204,7 @@ a{
 .span3efecto{
     animation: span3 ease-in .3s forwards;
     animation-iteration-count: 1;
+    background-color: red;
 }
 
 
@@ -377,7 +379,7 @@ h3{
     transition: .5s ease-in;
     }
 
-    #cont-amburguesa{
+    #cont-hamburguesa{
         display: block;
         z-index: 100;
     }
@@ -385,7 +387,8 @@ h3{
     .titulo-principal{
         font-size: 36px;
     }
-    
+
+
     .cont-cards{
         flex-direction: column;
         align-items: center;
@@ -393,6 +396,7 @@ h3{
 
     .card{
         max-width:280px ;
+        max-height: 300px;
     }
 
     footer{
@@ -414,6 +418,10 @@ h3{
 
     h2{
         font-size: 25px;
+    }
+
+    #titulo-contenido{
+       top: 0;
     }
 
     .cont-text-his{
