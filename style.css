@@ -1,9 +1,25 @@
+:root{
+    --backGrounPrincipal:#427E80;
+    --backGroundModooscuro:#333;
+    --backGroundFooterPrincipal: #1d1d1d;
+
+    --colorFontPrincipal:#F0F5E4;
+    --colorFontSecundaria:#000;
+
+    --bacgGroundButtonPrincipal:#d5daca;
+
+    --fontSizePrincipal:16px;
+    --fontSizeMobile:12px;
+    --h2Principal:40px;
+    --h2Mobile:25px;
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:  #427E80;
-    color: #F0F5E4;
+    background-color:  var(--backGrounPrincipal);
+    color: var(--colorFontPrincipal);
     font-family: 'Montserrat', sans-serif;
 } 
 
@@ -13,7 +29,7 @@ main{
 }
 
 footer{
-    background-color: #1d1d1d;
+    background-color: var(--backGroundFooterPrincipal);
     width: 100%;
     height: 80px;
     display: flex;
@@ -38,6 +54,10 @@ a{
     box-sizing: border-box;
 }
 
+ul{
+    padding: 0;
+}
+
 #monitor,
 #teclado{
     animation: logoAparece ease-in 5s;
@@ -45,11 +65,7 @@ a{
 }
 
 @keyframes logoAparece{
-    0%{
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    20%{
+    0%, 20%{
         transform: translateY(-10px);
         opacity: 0;
     }
@@ -66,11 +82,7 @@ a{
 }
 
 @keyframes logoAparece2{
-    0%{
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    30%{
+    0%, 30%{
         transform: translateY(-10px);
         opacity: 0;
     }
@@ -81,7 +93,7 @@ a{
 }
 
 .menu-nav{
-    color: #f0f5e4;
+    color: var(--colorFontPrincipal);
 }
 
 .ul{
@@ -100,14 +112,14 @@ a{
     box-shadow: 2px 3px #154454;
     border-radius: 10px;
     padding: 10px;
-    background-color: #F0F5E4;
+    background-color: var(--colorFontPrincipal);
     font-weight:300;
     margin: 22.9px;
     gap: 10px;
 }
 
 .a-menu-nav:hover{
-    background-color: #d5daca;
+    background-color: var(--bacgGroundButtonPrincipal);
 }
 
 #cont-hamburguesa{
@@ -125,7 +137,7 @@ a{
 .span-menu{
     width: 40px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--bacgGroundButtonPrincipal);
     display: block;
     margin:10px auto ;
     z-index: 100;
@@ -204,7 +216,7 @@ a{
 .span3efecto{
     animation: span3 ease-in .3s forwards;
     animation-iteration-count: 1;
-    background-color: red;
+    background-color: rgb(201, 0, 0);
 }
 
 
@@ -337,6 +349,78 @@ h3{
     display: none;
 }
 
+.cont-menu-temas{
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 100px;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    flex-direction: column;
+    border: #000 solid 1px;
+    top: 84px;
+    right: 0px;
+    border-radius: 0 0 5px 5px;
+}
+
+.btn-temas{
+    padding: 10px ;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    border: 0;
+    background-color:var(--colorFontPrincipal);
+    display: flex;
+    align-items: center;
+}
+
+.btn-temas:hover{
+    background-color: var(--bacgGroundButtonPrincipal);
+}
+
+.ampliar-menu-temas{
+    height: auto;
+}
+
+.sub-menu-temas{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0;
+}
+
+.li-temas{
+    list-style: none;
+    padding: 10px 20px;
+    color: #f0f5e4;
+    cursor: pointer;
+    user-select: none;
+}
+
+.li-temas-1{
+    background-color: #427E80;
+}
+
+.li-temas-2{
+    background-color: #333;
+}
+
+.li-temas-3{
+    background-color: gray;
+    border-radius: 0 0 5px 5px;
+    color: #000;
+}
+
+.icono-temas{
+    width: 20px;
+    margin-right:10px ;
+}
+
+.modo-oscuro{
+    background-color: var(--backGroundModooscuro);
+    color: var(--colorFontPrincipal);
+}
 
 @media (max-width:800px){
     main{
@@ -417,16 +501,17 @@ h3{
     }
 
     h2{
-        font-size: 25px;
+        font-size:var(--h2Mobile);
     }
 
     #titulo-contenido{
        top: 0;
     }
 
-    .cont-text-his{
+    .cont-text-his>p{
         flex-direction: column;
         width: 100%;
+        color: #fff;
     }
 
     #cont-video{
