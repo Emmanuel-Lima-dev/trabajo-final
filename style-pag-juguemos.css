@@ -48,7 +48,7 @@ h2{
     padding: 10px 100px;
     box-shadow: 2px 3px #154454;
     border-radius: 10px;
-    background-color: #F0F5E4;
+    background-color: var(--colorFontPrincipal);
     color: #154454;
     font-weight: 300;
     cursor: pointer;

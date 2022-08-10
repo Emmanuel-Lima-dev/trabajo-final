@@ -1,9 +1,9 @@
 
-const video=document.querySelector("#video-his");
-const btnPlay=document.querySelector("#btn-play");
-const btnStop=document.querySelector("#btn-stop");
-const barraProgresoVideo=document.querySelector("#barra-progreso-video");
-const duracionVideo=document.querySelector("#duracion-video");
+const video=document.querySelector("#video-his"), 
+btnPlay=document.querySelector("#btn-play"), 
+btnStop=document.querySelector("#btn-stop"), 
+barraProgresoVideo=document.querySelector("#barra-progreso-video"), 
+duracionVideo=document.querySelector("#duracion-video");
 
 
 

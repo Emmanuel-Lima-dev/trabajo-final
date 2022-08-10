@@ -41,6 +41,16 @@ footer{
     z-index: 100;
 }
 
+h2{
+    text-shadow: 2px 2px #154454;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 14px;
+}
+
 a{
     user-select: none;
 }
@@ -153,7 +163,7 @@ ul{
 .span1efecto{
     animation: span1 ease-in .3s forwards;
     animation-iteration-count: 1;
-    background-color: red;
+    background-color: rgb(201, 0, 0);
 }
 
 @keyframes span1{
@@ -271,11 +281,6 @@ ul{
     text-align: center;
 }
 
-h2{
-    text-shadow: 2px 2px #154454;
-    text-align: center;
-    font-size: 40px;
-}
 
 #titulo-contenido{
     position: relative;
@@ -295,7 +300,7 @@ h2{
 .card{
     width: 350px;
     height: 400px;
-    background-color: #F0F5E4;
+    background-color: var(--colorFontPrincipal);
     border: solid 5px #154454;
     display: flex;
     justify-content: space-between;
@@ -326,7 +331,7 @@ h2{
     box-shadow: 2px 3px #154454;
     text-align: center;
     text-decoration: none;
-    color: #F0F5E4;
+    color: var(--colorFontPrincipal);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -339,10 +344,6 @@ h2{
     display: flex;
     text-align: center;
     align-items: center;
-}
-
-h3{
-    font-size: 14px;
 }
 
 .none{
@@ -393,23 +394,18 @@ h3{
 .li-temas{
     list-style: none;
     padding: 10px 20px;
-    color: #f0f5e4;
+    color: var(--colorFontPrincipal);
     cursor: pointer;
     user-select: none;
 }
 
 .li-temas-1{
-    background-color: #427E80;
+    background-color: var(--backGrounPrincipal);
 }
 
 .li-temas-2{
-    background-color: #333;
-}
-
-.li-temas-3{
-    background-color: gray;
+    background-color: var(--backGroundModooscuro);
     border-radius: 0 0 5px 5px;
-    color: #000;
 }
 
 .icono-temas{
@@ -419,6 +415,10 @@ h3{
 
 .modo-oscuro{
     background-color: var(--backGroundModooscuro);
+    color: var(--colorFontPrincipal);
+}
+
+.parrafo-blanco{
     color: var(--colorFontPrincipal);
 }
 
@@ -472,7 +472,9 @@ h3{
         font-size: 36px;
     }
 
-
+    #titulo-contenido{
+        margin: 100px;
+    }
     .cont-cards{
         flex-direction: column;
         align-items: center;
@@ -493,11 +495,22 @@ h3{
     
     .cont-parrafos{
         flex-direction: column;
-        padding: 10px;
+        padding: 0;
+        
+    }
+    
+    .text-his{
+        width: 90%;
+        text-align: justify;
     }
 
     #cont-parrafos-2{
         flex-direction: column-reverse;
+    }
+
+    .cont-text-his{
+        width: 90%;
+        text-align: justify;
     }
 
     h2{
@@ -508,21 +521,17 @@ h3{
        top: 0;
     }
 
-    .cont-text-his>p{
-        flex-direction: column;
-        width: 100%;
-        color: #fff;
-    }
-
     #cont-video{
-        width: 100%;
+        width: 90%;
         margin: 0;
+        text-align: justify;
     }
 
     article{
-        padding:10px ;
+        padding:10px;
         display: block;
         height: 600px;
+        width: 100%;
     }
     .barra-video{
         height: 50px;

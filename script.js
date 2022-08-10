@@ -1,10 +1,7 @@
 //efecto al scrollear en la sección historia
 
-
-const parrafos=document.querySelectorAll(".cont-text-his");
-const card=document.querySelectorAll(".card");
-const lengthParrafo=parrafos.length;
-const lengthCard= card.length;
+const parrafos=document.querySelectorAll(".cont-text-his"),card=document.querySelectorAll(".card"), lengthParrafo=parrafos.length, 
+lengthCard= card.length;
 
 
 window.addEventListener("scroll", ()=>{
@@ -38,12 +35,11 @@ window.addEventListener("scroll", ()=>{
 
 //evento rompecabeza               ...en este caso elegí poner los eventos en el archivo html para no estar repitiendo el mismo evento en cada nodo.
 
-const imagen1=document.querySelector("#img1");
-const imagen2=document.querySelector("#img2");
-const imagen3=document.querySelector("#img3");
-const btnReiniciar=document.querySelector("#btn-reiniciar");
-const bienHecho=document.createElement("div"); // contenedor del mensaje que aparece al finalizar el rompecabezas.
-const main=document.querySelector("main");
+const imagen1=document.querySelector("#img1"), 
+imagen2=document.querySelector("#img2"), 
+imagen3=document.querySelector("#img3"), 
+btnReiniciar=document.querySelector("#btn-reiniciar"), bienHecho=document.createElement("div"), // contenedor del mensaje que aparece al finalizar el rompecabezas.
+main=document.querySelector("main");
 let verificador=["","",""]; //este array lo uso para validar los contenedores del rompecabezas en caso de que esten vacios o no y para verificar las posiciones de las imagenes del mismo.
 
 const inicioArrastre=(e)=>{
@@ -75,36 +71,39 @@ let eventoDrop=(event)=>{
      }
 };
 
-btnReiniciar.addEventListener("click", ()=>{
-     let contImagenes=document.querySelector("#cont-img-rompe");
-     let generadorAleatoriedad =+ Math.floor(Math.random() * 4);
-     // para que las imagenes se reacomoden de forma aleatorea aunque usé un método poco práctico.
-     if (generadorAleatoriedad==0) {
-          contImagenes.appendChild(imagen1);
-          contImagenes.appendChild(imagen2);
-          contImagenes.appendChild(imagen3);
-     } else if (generadorAleatoriedad==1) {
-          contImagenes.appendChild(imagen3);
-          contImagenes.appendChild(imagen2);
-          contImagenes.appendChild(imagen1);
-     }else if (generadorAleatoriedad==2) {
-          contImagenes.appendChild(imagen3);
-          contImagenes.appendChild(imagen1);
-          contImagenes.appendChild(imagen2);
-     } else if (generadorAleatoriedad==3) {
-          contImagenes.appendChild(imagen1);
-          contImagenes.appendChild(imagen3);
-          contImagenes.appendChild(imagen2);
-     };
-     
-     (document.querySelector("#p1")).classList.remove("none");
-     (document.querySelector("#p2")).classList.remove("none");
-     (document.querySelector("#p3")).classList.remove("none");
-     verificador=["","",""];
-     if (main.appendChild(bienHecho)) {
-          main.removeChild(bienHecho);
-     }
-});
+if (btnReiniciar) {
+     btnReiniciar.addEventListener("click", ()=>{
+          let contImagenes=document.querySelector("#cont-img-rompe");
+          let generadorAleatoriedad =+ Math.floor(Math.random() * 4);
+          // para que las imagenes se reacomoden de forma aleatorea aunque usé un método poco práctico.
+          if (generadorAleatoriedad==0) {
+               contImagenes.appendChild(imagen1);
+               contImagenes.appendChild(imagen2);
+               contImagenes.appendChild(imagen3);
+          } else if (generadorAleatoriedad==1) {
+               contImagenes.appendChild(imagen3);
+               contImagenes.appendChild(imagen2);
+               contImagenes.appendChild(imagen1);
+          }else if (generadorAleatoriedad==2) {
+               contImagenes.appendChild(imagen3);
+               contImagenes.appendChild(imagen1);
+               contImagenes.appendChild(imagen2);
+          } else if (generadorAleatoriedad==3) {
+               contImagenes.appendChild(imagen1);
+               contImagenes.appendChild(imagen3);
+               contImagenes.appendChild(imagen2);
+          };
+          
+          (document.querySelector("#p1")).classList.remove("none");
+          (document.querySelector("#p2")).classList.remove("none");
+          (document.querySelector("#p3")).classList.remove("none");
+          verificador=["","",""];
+          if (main.appendChild(bienHecho)) {
+               main.removeChild(bienHecho);
+          }
+     });
+}
+
 
 
 
