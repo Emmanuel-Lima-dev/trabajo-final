@@ -533,6 +533,7 @@ ul{
         display: block;
         height: 600px;
         width: 100%;
+        box-sizing: border-box;
     }
     .barra-video{
         height: 50px;
