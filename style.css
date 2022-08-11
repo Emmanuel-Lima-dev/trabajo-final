@@ -439,6 +439,8 @@ ul{
 
     svg{
         width: 120px;
+        height: 65px;
+        margin-left: -40px;
     }
 
     .ul{
@@ -524,7 +526,7 @@ ul{
 
     #cont-video{
         width: 90%;
-        margin: 0;
+        margin: auto;
         text-align: justify;
     }
 
