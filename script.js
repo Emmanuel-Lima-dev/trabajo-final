@@ -1,6 +1,8 @@
 //efecto al scrollear en la sección historia
 
-const parrafos=document.querySelectorAll(".cont-text-his"),card=document.querySelectorAll(".card"), lengthParrafo=parrafos.length, 
+const parrafos=document.querySelectorAll(".cont-text-his"),
+card=document.querySelectorAll(".card"), 
+lengthParrafo=parrafos.length, 
 lengthCard= card.length;
 
 
@@ -38,7 +40,8 @@ window.addEventListener("scroll", ()=>{
 const imagen1=document.querySelector("#img1"), 
 imagen2=document.querySelector("#img2"), 
 imagen3=document.querySelector("#img3"), 
-btnReiniciar=document.querySelector("#btn-reiniciar"), bienHecho=document.createElement("div"), // contenedor del mensaje que aparece al finalizar el rompecabezas.
+btnReiniciar=document.querySelector("#btn-reiniciar"), 
+bienHecho=document.createElement("div"), // contenedor del mensaje que aparece al finalizar el rompecabezas.
 main=document.querySelector("main");
 let verificador=["","",""]; //este array lo uso para validar los contenedores del rompecabezas en caso de que esten vacios o no y para verificar las posiciones de las imagenes del mismo.
 

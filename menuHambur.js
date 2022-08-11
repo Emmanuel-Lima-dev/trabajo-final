@@ -1,6 +1,7 @@
 //menu amburguesa
 
-const menuHambur=document.getElementById("cont-hamburguesa"), menuResponsive=document.querySelector(".ul"),
+const menuHambur=document.getElementById("cont-hamburguesa"), 
+menuResponsive=document.querySelector(".ul"),
 span1=document.querySelector(".span1"),
 span2=document.querySelector(".span2"),
 span3=document.querySelector(".span3");

@@ -519,6 +519,7 @@ ul{
 
     #titulo-contenido{
        top: 0;
+       margin:100px 0;
     }
 
     #cont-video{
@@ -540,5 +541,21 @@ ul{
         bottom: -40px;
     }
     
+    .cont-zone-rompe{
+        min-width: none;
+        width: 100%;
+        margin:100px 0;
+    }
 
+    .zone-rompe{
+        height: 220px;
+    }
+
+    #img1, 
+    #img2, 
+    #img3{
+        min-width: 100px;
+        justify-content: space-between;
+        height: 220px;
+    }
 }
